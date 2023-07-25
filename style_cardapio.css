@@ -1,0 +1,1233 @@
+@font-face {
+    font-family: 'ruda-black';
+    src: url('font/ruda-black.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'pompiere';
+    src: url('font/Pompiere-Regular.ttf') format('truetype');
+  }
+
+
+*{  
+    font-family: 'pompiere';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+.acessibilidade button{
+  width: 90px;
+  height: 30px;
+}
+
+.acessibilidade{
+  margin-top: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+body{
+    background-image: url('img/img_fundo.jfif');
+    height: 100%;
+    width: 100vw;
+}
+
+.a_nav {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+  }
+  
+.a_nav:hover{
+  color: skyblue;
+}
+  a:hover {
+    
+    background: rgba(0, 0, 0, 0.05);
+  }
+  
+  #logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header_menu nav{
+   align-items: center;
+   display: flex;
+   margin: 0 auto;
+   margin-top: 50px;
+  }
+
+  .menu_text{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #header_ {
+   overflow-y: hidden;
+    box-sizing: border-box;
+    height: 100px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,171,255,0.75) 37%, rgba(0,171,255,0.75) 50%, rgba(0,171,255,0.75) 63%, rgba(0,0,0,0.75) 100%);
+  
+  }
+
+  #header_ img{
+    margin-top: -50px;
+  }
+
+  #header {
+
+    box-sizing: border-box;
+    height: 100px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,171,255,0.75) 37%, rgba(0,171,255,0.75) 50%, rgba(0,171,255,0.75) 63%, rgba(0,0,0,0.75) 100%);
+  
+  }
+  
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  #btn-mobile {
+    display: none;
+  }
+
+ 
+  
+  @media (max-width: 600px) {
+ 
+    #header{
+      background-image: url('../img/img_fundo.jfif');
+      
+
+    }
+
+    #menu {
+      text-align: center;
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 100px;
+      right: 0px;
+      background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,171,255,0.85) 37%, rgba(0,171,255,0.85) 50%, rgba(0,171,255,0.85) 63%, rgba(0,0,0,0.75) 100%);
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    #btn-mobile {
+      top: 0;
+      right: 0;
+      position: absolute;
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+    #hamburger {
+      border-top: 2px solid white;
+      width: 20px;
+      
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: white;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
+
+@media (max-width: 270px){
+  #header_ img{
+    margin-top: -20px;
+  }
+
+}
+
+/* PAGINA CARDAPIO - INCIO*/
+
+
+
+.cardapio{
+    display: flex;
+    background-image: url('../img/img_fundo.jfif');
+    height: 100%;
+    width: 100%;
+  
+  }
+  
+  .cardapio h3{
+    font-size: 40px;
+  }
+  
+  .cardapio{
+      display: flex;
+      margin-top: 150px;
+      align-items: center;
+  }
+  
+  .cardapio{
+    color: white;
+  }
+  
+  .cardapio h1{
+    margin-top: 100px;
+    font-size: 60px;
+    text-align: center;
+  }
+  
+ 
+  
+  .agua h2{
+    font-size: 47px;
+    text-align: center;
+    color: #8AB7DD;
+  }
+  
+  .terra h2{
+    font-size: 47px;
+    text-align: center;
+    color: #B77322;
+  }
+  
+  .fogo h2{
+    font-size: 47px;
+    text-align: center;
+    color: #D13C3C;
+  }
+  
+  .ar h2{
+    font-size: 47px;
+    text-align: center;
+    color: rgb(209, 219, 221);
+  }
+  
+  .ar h3{
+    text-align: center;
+    color: rgb(209, 219, 221);
+  }
+  
+  .agua h3{
+    margin-top: 10px;
+    text-align: center;
+    color: #8AB7DD;
+  }
+  
+  .terra h3{
+    margin-top: 10px;
+    text-align: center;
+    color: #B77322;
+  }
+  
+  .fogo h3{
+    margin-top: 10px;
+    text-align: center;
+    color: #D13C3C;
+  }
+  
+  .ar h3{
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(166, 171, 172);
+  }
+  
+  .terra{
+    margin-top: 50px;
+  }
+  
+  .fogo{
+    margin-top: 50px;
+  }
+  
+  .agua{
+    margin-top: 50px;
+  }
+  
+  
+  
+  
+  
+  #img_lanches_{
+    width: 200px;
+    margin: 0 auto;
+  }
+  
+
+  
+  
+  
+  
+  .cardapio .limitador{
+    margin: 0 auto;
+  }
+  
+  .card p{
+    font-size: 20px;
+    color: black;
+  }
+  
+  .card{
+
+    margin-left: 50px;
+  }
+ 
+
+  .btn{
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  
+  @media (max-width: 860px){
+    .cardapio h1{
+  
+      font-size: 40px;
+     
+    }
+    .d-flex{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card{
+      margin-top: 50px;
+    }
+  
+    .cardapio{
+        display: flex;
+      background-image: url('../img/img_fundo.jfif');
+      height: 100%;
+      width: 100vw;
+      }
+      #center_img{
+        width: 400px;
+      }
+      
+  }
+
+
+
+/* PAGINA CARDAPIO - FIM*/
+
+/* PAGINA CARDAPIO - INCIO*/
+
+.cardapio{
+  text-align: center;
+}
+
+#principal_lanche_img{
+  border-radius: 45px;
+  width: 200px;
+  height: 200px;
+  -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
+}
+
+#principal_lanche_img:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.dividir_lanches_ar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lanche_principal_gemeos{
+  padding: 2%;
+
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+}
+
+.lanche_principal_aquario{
+
+  padding: 2%;
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+}
+
+
+.lanche_principal_libra{
+
+  padding: 2%;
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+
+}
+
+.dividir_lanches_terra{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lanche_principal_touro{
+  padding: 2%;
+
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+}
+
+.lanche_principal_virgem{
+
+  padding: 2%;
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+}
+
+
+.lanche_principal_capricornio{
+
+  padding: 2%;
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+
+}
+
+.dividir_lanches_fogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lanche_principal_leao{
+  padding: 2%;
+
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+}
+
+.lanche_principal_aries{
+
+  padding: 2%;
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+}
+
+
+.lanche_principal_sargitario{
+
+  padding: 2%;
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+
+}
+
+.dividir_lanches_agua{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lanche_principal_peixe{
+  padding: 2%;
+
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+}
+
+.lanche_principal_cancer{
+  padding: 2%;
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+}
+
+
+.lanche_principal_escorpiao{
+  padding: 2%;
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+
+}
+
+.lanches_ar h2{
+  color: rgb(166, 171, 172);
+  font-size: 50px;
+}
+
+.lanches_terra h2{
+  color: #B77322;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.lanches_fogo h2{
+  color: #D13C3C;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.lanches_agua h2{
+  color: #8AB7DD;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+
+.bebidas h2{
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.bebida_principal_agua{
+  padding: 2%;
+
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+}
+
+.bebida_principal_refrigerante{
+
+  padding: 2%;
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+}
+
+
+.bebida_principal_suco{
+
+  padding: 2%;
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+
+}
+
+.sobremesas h2{
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.sobremesa_principal_brownie{
+  padding: 2%;
+
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+}
+
+.sobremesa_principal_acai{
+
+  padding: 2%;
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+}
+
+
+.sobremesa_principal_mousse{
+
+  padding: 2%;
+  width: 300px;
+  color: white;
+  border: 5px solid black;
+
+}
+
+@media (max-width: 920px){
+  #principal_lanche_img{
+    border-radius: 45px;
+    width: 130px;
+    height: 130px;
+    -webkit-transition: -webkit-transform .5s ease;
+     transition: transform .5s ease;
+  }
+  .dividir_lanches_ar{
+    flex-direction: column;
+  }
+  .dividir_lanches_terra{
+    flex-direction: column;
+  }
+  .dividir_lanches_fogo{
+    flex-direction: column;
+  }
+  .dividir_lanches_agua{
+    flex-direction: column;
+  }
+  .dividir_lanches_ar{
+    flex-direction: column;
+  }
+   .dividir_lanches_ar{
+    flex-direction: column;
+  }
+}
+
+@media (max-width:320px){
+  #principal_lanche_img{
+    border-radius: 45px;
+    width: 120px;
+    height: 120px;
+    -webkit-transition: -webkit-transform .5s ease;
+     transition: transform .5s ease;
+  }
+  .lanche_principal_gemeos{
+    padding: 2%;
+    background-color: white;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  .lanche_principal_aquario{
+    background-color: white;
+    padding: 2%;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  
+  .lanche_principal_libra{
+    background-color: white;
+    padding: 2%;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  
+  }
+  
+  .dividir_lanches_terra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .lanche_principal_touro{
+    padding: 2%;
+    background-color: white;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  .lanche_principal_virgem{
+    background-color: white;
+    padding: 2%;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  
+  .lanche_principal_capricornio{
+    background-color: white;
+    padding: 2%;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  
+  }
+  
+  .dividir_lanches_fogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .lanche_principal_leao{
+    padding: 2%;
+    background-color: white;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  .lanche_principal_aries{
+    background-color: white;
+    padding: 2%;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  
+  .lanche_principal_sargitario{
+    width: 250px;  
+  }
+
+  .lanche_principal_peixe{
+    padding: 2%;
+    background-color: white;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  .lanche_principal_cancer{
+    background-color: white;
+    padding: 2%;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  
+  .lanche_principal_escorpiao{
+    background-color: white;
+    padding: 2%;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  
+  }
+
+
+  .bebida_principal_agua{
+    padding: 2%;
+    background-color: white;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  .bebida_principal_refrigerante{
+    background-color: white;
+    padding: 2%;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  
+  .bebida_principal_suco{
+    background-color: white;
+    padding: 2%;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  
+  }
+  
+  .sobremesas h2{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .sobremesa_principal_brownie{
+    padding: 2%;
+    background-color: white;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  .sobremesa_principal_acai{
+    background-color: white;
+    padding: 2%;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  
+  .sobremesa_principal_mousse{
+    background-color: white;
+    padding: 2%;
+    width: 250px;
+    color: black;
+    border: 5px solid black;
+  
+  }
+
+ 
+}
+
+@media (max-width:260px){
+  #principal_lanche_img{
+    border-radius: 45px;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: -webkit-transform .5s ease;
+     transition: transform .5s ease;
+  }
+  .lanche_principal_gemeos{
+    padding: 2%;
+    background-color: white;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  .lanche_principal_aquario{
+    background-color: white;
+    padding: 2%;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  
+  .lanche_principal_libra{
+    background-color: white;
+    padding: 2%;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  
+  }
+  
+  .dividir_lanches_terra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .lanche_principal_touro{
+    padding: 2%;
+    background-color: white;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  .lanche_principal_virgem{
+    background-color: white;
+    padding: 2%;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  
+  .lanche_principal_capricornio{
+    background-color: white;
+    padding: 2%;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  
+  }
+  
+  .dividir_lanches_fogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .lanche_principal_leao{
+    padding: 2%;
+    background-color: white;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  .lanche_principal_aries{
+    background-color: white;
+    padding: 2%;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  
+  .lanche_principal_sargitario{
+    width: 200px;  
+  }
+
+  .lanche_principal_peixe{
+    padding: 2%;
+    background-color: white;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  .lanche_principal_cancer{
+    background-color: white;
+    padding: 2%;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  
+  .lanche_principal_escorpiao{
+    background-color: white;
+    padding: 2%;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  
+  }
+
+
+  .bebida_principal_agua{
+    padding: 2%;
+    background-color: white;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  .bebida_principal_refrigerante{
+    background-color: white;
+    padding: 2%;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  
+  .bebida_principal_suco{
+    background-color: white;
+    padding: 2%;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  
+  }
+  
+  .sobremesas h2{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .sobremesa_principal_brownie{
+    padding: 2%;
+    background-color: white;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  .sobremesa_principal_acai{
+    background-color: white;
+    padding: 2%;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  
+  .sobremesa_principal_mousse{
+    background-color: white;
+    padding: 2%;
+    width: 200px;
+    color: black;
+    border: 5px solid black;
+  
+  }
+}
+/* PAGINA CARDAPIO - FIM*/
+
+/* Section AVALIAÇÃO - INCIO*/
+
+
+.avaliacoes{
+  overflow-y: hidden;
+  background-image: url('../img/img_fundo.jfif');
+  height: 100%;
+  width: 100vw;
+}
+
+.avaliacoes h1{
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+}
+
+.avaliacoes h2{
+  font-size: 25px;
+  color: white;
+}
+
+.avaliacoes p{
+  padding: 2%;
+  font-size: 20px;
+  color: white;
+}
+
+
+
+.avaliacao_1{
+  display: flex;
+  justify-content: space-around;
+}
+
+.avaliacao_2{
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.avaliacao_2 .avaliacao:first-child{
+  margin-left: 120px;
+}
+
+
+.avaliacao_2 .avaliacao:last-child{
+  margin-right: 120px;
+}
+
+.avaliacao{
+  border-radius: 20px;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  border: 1px solid #8D8E90;
+  width: 300px;
+}
+
+.avaliacao img{
+  width: 100px;
+}
+
+
+@media (max-width: 970px){
+ 
+ .avaliacao_1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .avaliacao_2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .avaliacao_2 .avaliacao:first-child{
+    margin-left: 0px;
+  }
+  
+  
+  .avaliacao_2 .avaliacao:last-child{
+    margin-right: 0px;
+  }
+  
+  
+
+}
+
+@media (max-width: 320px){
+  .avaliacao{
+
+    width: 200px;
+  }
+  
+}
+/* Section AVALIAÇÃO - FIM*/
+
+/* Section Footer - INICIO*/
+
+#myFooter {
+  position: absolute;
+  margin-top: 20px;
+  width: 100vw;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,171,255,0.75) 37%, rgba(0,171,255,0.75) 50%, rgba(0,171,255,0.75) 63%, rgba(0,0,0,0.75) 100%);
+  color: white;
+  padding-top: 10px;
+}
+
+#myFooter .footer-copyright {
+background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0, 148, 223, 0.75) 37%, rgba(0, 148, 223, 0.75) 50%, rgba(0, 148, 223, 0.75) 63%, rgba(0,0,0,0.75) 100%);
+padding-top: 3px;;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+#myFooter .row {
+  margin-bottom: 60px;
+}
+
+#myFooter .navbar-brand {
+  margin-top: 45px;
+  height: 65px;
+}
+
+#myFooter .footer-copyright p {
+  margin: 10px;
+  color: white;
+}
+
+#myFooter ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.7;
+}
+
+#myFooter h5 {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#myFooter h2 a{
+  font-size: 90px;
+  text-align: center;
+  color: white;
+}
+
+#myFooter a {
+color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+  text-decoration: none;
+  color: black;
+}
+
+#myFooter .social-networks {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+
+#myFooter .social-networks a {
+  font-size: 42px;
+  color: #f9f9f9;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+  text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+background-color: #00aced;
+}
+
+#myFooter .instagram:hover {
+background-color: purple;
+}
+
+#myFooter .whatsapp:hover {
+  background-color: green;
+}
+
+#myFooter .btn {
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 150px;
+  font-size: 24px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.col-sm-3{
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  #myFooter {
+      text-align: center;
+  }
+}
+
+
+
+
+.content{
+flex: 1 0 auto;
+-webkit-flex: 1 0 auto;
+min-height: 200px;
+}
+
+#myFooter{
+flex: 0 0 auto;
+-webkit-flex: 0 0 auto;
+}
+
+
+
+
+/* Section Footer - FIM*/

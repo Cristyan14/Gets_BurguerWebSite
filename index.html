@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>GETS Burguer</title>
+    <link rel = "shortcut icon" type = "imagem/x-icon" href = "img/hamburger.png"/>
+    <script src="js/acessibilidade.js"></script>
+    
+</head>
+<body>
+    <button id ="btnFonteMais" name="btnFonteMais" class="botao" style="width: 60px;">
+        +
+    </button>
+    
+    <button id ="btnFonteMenos" name="btnFonteMenos" class="botao" style="width: 60px;">
+        -
+    </button>
+    <br>
+    <header id="header_" class="header_menu">
+       
+            <nav id="nav_img">
+               <img src="img/logo_com_signos.png.png" id="logocomsignos" alt="">
+            </nav>
+    </header>
+        <header id="header" class="menu_text">
+            <nav id="nav">
+                <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role='menu'>
+                    <li><a href="index.html" class="a_nav">Home</a></li>
+                    <li><a href="cardapio.html" class="a_nav txtFontC">Cardápio</a></li>
+                    <li><a href="#promocoes" class="a_nav txtFontC">Promoções</a></li>
+                    <li><a href="#info_contato" class="a_nav txtFontC">Contato</a></li>
+                    <li><a href="#info_sobre" class="a_nav txtFontC">Sobre</a></li>
+                    <li><a href="logar/login.php" class="a_nav txtFontC">Login</a></li>
+                    <li><a href="logar/formulario.php" class="a_nav txtFontC">Cadastrar</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+    </header>
+
+
+    
+
+    <section class="info">
+        <div class="limitador">
+            <div class="flex_box">
+                <h1 id="aumentar_h1">O SABOR DA ASTROLOGIA!!!</h1>
+                <img src="img/hamburguercomsigno.png" id="img_hamburgue_signo" alt="">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="principais">
+        <div class="limitador">
+            <div class="principais_lanches">
+                <h2 id="h2_principais">PRINCIPAIS HAMBÚRGUERES</h2>
+                <div class="dividir_lanches_1">
+                    <div class="lanche_principal_1">
+                        <img src="img/principal.jfif" alt="" id="principal_lanche_img">
+                        <div class="separar_principal">
+                            <h3 id="h3">Lanche Genérico</h3>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <button type="button" class="btn btn-danger" onclick="leiamais()">R$50,00</button>
+                        </div>
+                    </div>
+                    <div class="lanche_principal_2">
+                        <img src="img/principal.jfif" alt="" id="principal_lanche_img">
+                        <div class="separar_principal">
+                            <h3 id="h3">Lanche Genérico</h3>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <button type="button" class="btn btn-danger" onclick="leiamais()">R$50,00</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dividir_lanches_2">
+                    <div class="lanche_principal_3">
+                        <img src="img/principal.jfif" alt="" id="principal_lanche_img">
+                        <div class="separar_principal">
+                            <h3 id="h3">Lanche Genérico</h3>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <button type="button" class="btn btn-danger" onclick="leiamais()">R$50,00</button>
+                        </div>
+                    </div>
+                    <div class="lanche_principal_4">
+                        <img src="img/principal.jfif" alt="" id="principal_lanche_img">
+                        <div class="separar_principal">
+                            <h3 id="h3">Lanche Genérico</h3>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <button type="button" class="btn btn-danger" onclick="leiamais()">R$50,00</button>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="promocoes_diarias" id="promocoes">
+        <h2>OFERTAS DO DIA</h2>
+        <div class="limitador">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/promocao.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/promocao.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/promocao.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+        </div>
+    </section>
+
+    <section class="info_sobre" id="info_sobre">
+        <div class="limitador">
+        <div class="sobre_empresa">
+            <div class="sobre_textos">
+                <h1>SOBRE A EMPRESA:</h1>
+                <p>Somos uma hamburgeria temática com o tema astrologia, voltada ao entendimento dos signos através dos nossos produtos.
+                    <br>É uma forma de entretenimento, transmissão de
+                    conhecimento sobre a astrologia. 
+                    <br>Nós além de produzirmos produtos de ótima qualidade,
+                    levaremos um pouco mais do nosso universo para o nosso cliente.
+
+                </p>
+            </div>
+            <h2>Fundadores</h2>
+            <div class="imgs_sobre">
+                <img src="img/fundador1.jfif">
+                <img src="img/fundador_2.jfif">
+                <img src="img/fundador_4.jfif">
+            </div>
+        </div>
+    </div>
+    </section>
+
+    
+
+    <section class="info_contato" id="info_contato">
+        <div class="limitador">
+
+            <center><img src="img/entreemcontato.png.png" id="contato_img" alt="imagem escrita contato com um hamburgúer no o de contato"></center>
+            <div class="flex_contatos">
+                <div class="card" >
+                    <div class="card-body">
+                      <img src="img/telefone.png">
+                      <h2 class="card-text">XX - XXXXXXXX</h2>
+                    
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="card-body">
+                        <img src="img/whatsapp_.png">
+                        <h2 class="card-text">XX - XXXXXXXXX</h2>
+                    </div>
+                  </div>
+                  <div class="card"  >
+                    <div class="card-body">
+                        <img src="img/email.png">
+                        <h2 class="card-text">getsburguer@gmail.com</h2>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="card-body">
+                        <img src="img/localização.png" id="localizacao_img">
+                        <h2 class="card-text">Av Ipiranga, 167</h2>
+                        <p>De terça a domingo das: 12:00 até 00:00</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                   
+                </div>
+                <div class="col-sm-2">
+                    <h5>Inicio</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="#promocoes">Promoções</a></li>
+                        <li><a href="#info_sobre">Sobre</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Sobre-nós</h5>
+                    <ul>
+                        <li><a href="#">Nossas Unidades</a></li>
+                        <li><a href="https://web.whatsapp.com/send?phone=5511999798306" target="_blank">Contato</a></li>
+                        <li><a href="#">Politica de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="https://web.whatsapp.com/send?phone=5511999798306" target="_blank" class="whatsapp" class="whatsapp"><img src="img/whatsapp.png" alt="" width="35px"></a>
+                        <a href="https://instagram.com/gets.burguer?igshid=YmMyMTA2M2Y=" class="instagram"><img src="img/insta.png" alt="" width="35px"></a>
+                        <a href="#" class="facebook"><img src="img/face_azul.png" alt="" width="35px" ></a>
+                    </div>
+                    <a href="https://web.whatsapp.com/send?phone=5511999798306" target="_blank">
+                        <button type="button" class="btn btn-default">Contato</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+      
+        <div class="footer-copyright">
+            <p>© 2022 Copyright - Tecnologias BAKI</p>
+        </div>
+        
+    </footer>
+    <script src="js/mudarpag.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="js/mobile.js"></script>
+    </body>
+    </html>
