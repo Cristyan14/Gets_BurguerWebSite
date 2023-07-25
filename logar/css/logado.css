@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'Ruda-black';
+    src: url('../font/ruda-black.ttf');
+}
+
+
+
+body{
+    font-family: 'Ruda-black';
+    overflow-x: hidden;
+    background-image: url('../img/img_fundo.jfif');
+}
+
+h1#text_boasvindas{
+    color: white;
+}
+
+.coupon {
+    overflow-x: hidden;
+  border: 5px dotted #bbb; /* Dotted border */
+  width: 80vw;
+  border-radius: 15px; /* Rounded border */
+  margin: 0 auto; /* Center the coupon */
+  margin-top: 200px;
+  max-width: 600px;
+}
+
+.container {
+    overflow-x: hidden;
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+.promo {
+    overflow-x: hidden;
+  background: #ccc;
+  padding: 3px;
+  color: #ccc;
+}
+
+.promo:hover{
+    color: white;
+}
+
+.expire {
+  color: red;
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar a:hover{
+    color: white;
+}
+
+
+.navbar{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,171,255,0.75) 37%, rgba(0,171,255,0.75) 50%, rgba(0,171,255,0.75) 63%, rgba(0,0,0,0.75) 100%);
+}
+
+/* Section PROMOÇÕES - INICIO*/
+
+.carousel{
+    border: 2px solid white;
+    width: 600px;
+    margin: 0 auto;
+  }
+  
+  .promocoes_diarias h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  
+  @media (max-width: 650px){
+    .carousel{
+      border: 2px solid white;
+      width: 400px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 440px){
+    .carousel{
+      border: 2px solid white;
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 340px){
+    .carousel{
+      border: 2px solid white;
+      width: 250px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Section PROMOÇÕES - FIM*/
+
+#myFooter {
+    position: absolute;
+    margin-top: 20px;
+    width: 100vw;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,171,255,0.75) 37%, rgba(0,171,255,0.75) 50%, rgba(0,171,255,0.75) 63%, rgba(0,0,0,0.75) 100%);
+    color: white;
+    padding-top: 10px;
+  }
+  
+  #myFooter .footer-copyright {
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0, 148, 223, 0.75) 37%, rgba(0, 148, 223, 0.75) 50%, rgba(0, 148, 223, 0.75) 63%, rgba(0,0,0,0.75) 100%);
+  padding-top: 3px;;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+  }
+  
+  #myFooter .row {
+    margin-bottom: 60px;
+  }
+  
+  #myFooter .navbar-brand {
+    margin-top: 45px;
+    height: 65px;
+  }
+  
+  #myFooter .footer-copyright p {
+    margin: 10px;
+    color: white;
+  }
+  
+  #myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+  }
+  
+  #myFooter h5 {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  #myFooter h2 a{
+    font-size: 90px;
+    text-align: center;
+    color: white;
+  }
+  
+  #myFooter a {
+  color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  #myFooter a:hover,
+  #myFooter a:focus {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+  
+  #myFooter .social-networks a {
+    font-size: 42px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+  }
+  
+  #myFooter .social-networks a:hover {
+    text-decoration: none;
+  }
+  
+  #myFooter .facebook:hover {
+  background-color: #00aced;
+  }
+  
+  #myFooter .instagram:hover {
+  background-color: purple;
+  }
+  
+  #myFooter .whatsapp:hover {
+    background-color: green;
+  }
+  
+  #myFooter .btn {
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 150px;
+    font-size: 24px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+  }
+  
+  
+  
+  
+  .content{
+  flex: 1 0 auto;
+  -webkit-flex: 1 0 auto;
+  min-height: 200px;
+  }
+  
+  #myFooter{
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  }
+  
+  
